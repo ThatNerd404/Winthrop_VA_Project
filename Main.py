@@ -1,5 +1,7 @@
 # Winthrop_VA_Project - A fun Voice Assistant from my friend's, Winthrop, voice.
 
+#TODO: get rid of \n characters in the lists and continue with the query system
+
 import re
 import os
 def Read_File(file):
