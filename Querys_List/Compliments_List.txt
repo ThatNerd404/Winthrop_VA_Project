@@ -1,3 +1,0 @@
-voiceline 1
-voiceline 2
-voiceline 3
