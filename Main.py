@@ -33,7 +33,10 @@ def main():
             
             elif Query == "q":
                 sys.exit()
-            
+            elif Query not in Query_list:
+                os.system('cls')
+                print("Query Not Found")
+                break
             
             
 def Read_File(file):
