@@ -25,6 +25,7 @@ def main():
     
     while True:
         Query = input('Winthrop is listening... type your query!\n')
+        Query_Not_Found = 0
         for List in Query_list:
             if Query in List:
                 os.system('cls')
@@ -33,10 +34,17 @@ def main():
             
             elif Query == "q":
                 sys.exit()
-            elif Query not in Query_list:
-                os.system('cls')
-                print("Query Not Found")
-                break
+            
+            else:
+                
+                Query_Not_Found += 1
+                if Query_Not_Found == 4:
+                    os.system('cls')
+                    print("Query Not Found") #! change to winthrop saying idk man
+
+                else: 
+                    pass      
+        
             
             
 def Read_File(file):
