@@ -29,7 +29,7 @@ def main():
         for List in Query_list:
             if Query in List:
                 os.system('cls')
-                music(List[Query])
+                voiceline(List[Query])
                 break
             
             elif Query == "q":
@@ -51,7 +51,7 @@ def Read_File(file):
         data = json.load(read_file)
         return data
 
-def music(mp3):
+def voiceline(mp3):
     pygame.init()
     pygame.mixer.init()
     pygame.mixer.music.load(mp3)
