@@ -36,12 +36,11 @@ def main():
                 sys.exit()
             
             else:
-                
                 Query_Not_Found += 1
                 if Query_Not_Found == 4:
                     os.system('cls')
                     print("Query Not Found") #! change to winthrop saying idk man
-
+                    print("Tip: Make sure the first letter is capitalized and to add a period.")
                 else: 
                     pass      
         
